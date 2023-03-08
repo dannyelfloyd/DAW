@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>GDP of EU countries in 2022 Q1</title> 
+<style type="text/css">
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#chartdiv {
+  width: 100%;
+  height: 640px;
+}
+</style>
+
+<script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script type="text/javascript" src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+<script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script type="text/javascript">
+
+am5.ready(function() {
+/**
+ * ---------------------------------------
+ * This demo was created using amCharts 5.
+ * 
+ * For more information visit:
+ * https://www.amcharts.com/
+ * 
+ * Documentation is available at:
+ * https://www.amcharts.com/docs/v5/
+ * ---------------------------------------
+ */
+
+var root = am5.Root.new("chartdiv");
+
+
+
+root.setThemes([
+  am5themes_Animated.new(root)
+]);
+
+
+var chart = root.container.children.push(am5percent.PieChart.new(root, {
+  layout: root.verticalLayout
+}));
+
+
+// Create series
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+var series = chart.series.push(am5percent.PieSeries.new(root, {
+  valueField: "GDP2022Q1",
+  categoryField: "Country"
+}));
+
+
+// Set data
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+series.data.setAll([
+{ Country: " Belgium " , GDP2022Q1: 134.679 },
+{ Country: " Bulgaria " , GDP2022Q1: 20.041 },
+{ Country: " Czechia " , GDP2022Q1: 66.426 },
+{ Country: " Denmark " , GDP2022Q1: 89.855 },
+{ Country: " Germany " , GDP2022Q1: 941.337 },
+{ Country: " Estonia " , GDP2022Q1: 8.734 },
+{ Country: " Ireland " , GDP2022Q1: 116.899 },
+{ Country: " Greece " , GDP2022Q1: 50.579 },
+{ Country: " Spain " , GDP2022Q1: 318.659 },
+{ Country: " France " , GDP2022Q1: 646.202 },
+{ Country: " Croatia " , GDP2022Q1: 15.678 },
+{ Country: " Italy " , GDP2022Q1: 462.076 },
+{ Country: " Cyprus " , GDP2022Q1: 6.432 },
+{ Country: " Latvia " , GDP2022Q1: 9.402 },
+{ Country: " Lithuania " , GDP2022Q1: 15.672 },
+{ Country: " Luxembourg " , GDP2022Q1: 19.210 },
+{ Country: " Hungary " , GDP2022Q1: 42.671 },
+{ Country: " Malta " , GDP2022Q1: 3.903 },
+{ Country: " Netherlands " , GDP2022Q1: 227.013 },
+{ Country: " Austria " , GDP2022Q1: 107.623 },
+{ Country: " Poland " , GDP2022Q1: 158.173 },
+{ Country: " Portugal " , GDP2022Q1: 57.828 },
+{ Country: " Romania " , GDP2022Q1: 69.696 },
+{ Country: " Slovenia " , GDP2022Q1: 14.131 },
+{ Country: " Slovakia " , GDP2022Q1: 25.925 },
+{ Country: " Finland " , GDP2022Q1: 66.196 },
+{ Country: " Sweden " , GDP2022Q1: 135.730 },
+{ Country: " Norway " , GDP2022Q1: 125.478 },
+{ Country: " Switzerland " , GDP2022Q1: 183.317 },
+{ Country: " Montenegro " , GDP2022Q1: 1.382 },
+{ Country: " Serbia " , GDP2022Q1: 14.150 },
+{ Country: " Türkiye " , GDP2022Q1: 177.238 },
+
+]);
+
+
+// Play initial series animation
+// https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+series.appear(1000, 100);
+});
+</script>
+</head>
+<body>
+<div id="chartdiv"></div>
+
+</body>
+</html>

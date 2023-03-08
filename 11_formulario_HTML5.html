@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>EJERCICIO 11 | FORMULARIO HTML 5</title>
+        <link rel="stylesheet" href="11_formulario_HTML5.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>EJERCICIO 11 | FORMULARIO HTML 5</h1>
+        </header>
+
+        <section class="section">
+            <form action="http://10.0.56.5/~juanjo/00_primero/recibir_datos.php" method="GET">
+
+                <h3>Registro</h3>
+
+                <input class="controls" type="text" id="Nombre" name="nombre" required="" placeholder="Introduzca su Nombre:">
+                
+                <input class="controls" type="text" id="PrimerApellido" name="Apellido" required="" placeholder="Introduzca su Apellido:">
+
+                <input class="controls" type="number" id="Edad" name="Edad" min="18" max="150" placeholder="Edad">
+
+                <label for="BirthDate">Fecha de Nacimiento:</label> 
+                <input class="controls" type="date" id="BirthDate" name="BirthDate">
+
+                <datalist id="Idioma">
+                    <option value="English"></option>
+                    <option value="Euskera"></option>
+                    <option value="Castellano"></option>
+                </datalist>
+                <input class="controls" type="text" name="Idioma" list="Idioma" placeholder="Seleccione un Idioma">
+
+                <input class="controls" type="tel" name="Telefono" placeholder="Número Telefono:">
+
+                <input class="controls" type="email" id="Correo" name="correo" required="" placeholder="Introduzca su Correo:">
+ 
+                <input class="controls" type="Password" id="Password" name="Password" required="" placeholder="Introduzca su Contraseña:">
+
+                <label for="rango">Del 1 al 10, ¿Como considera este formulario?:</label> 
+                <input class="controls" type="range" id="rango" name="rango" min="1" max="10" oninput="this.nextElementSibling.value = this.value"><output></output><br>
+                
+                <input type="checkbox" name="Confirmacion" id="Confirmacion" value="Confirmacion" required="">
+                <label class="Confirmacion">Estoy de acuerdo con <a href="#">Terminos y Condiciones</label></p>
+                
+                <input class="botons" type="submit" value="Registrar">
+                <p><a href="#">¿Ya tengo Cuenta?</a></p>
+
+                <input type="hidden" name="IdUsuario" value="001">
+                
+            </form>
+
+        </section>
+
+
+        <footer>
+            <h2>@dannyelfloyd</h2>
+        </footer>
+
+    </body>
+
+</html>

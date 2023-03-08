@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(09_minisitio/background.jpg);
+    background-size: cover;
+    color: #fff;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px;
+    background-color: #005884;
+    text-align: center;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    min-width: 900px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #299fbd;
+}
+nav a {
+    color:#ebf446;
+    text-decoration: none;
+}
+.logo {
+    margin-left: 50px;
+}
+.content-ol {
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    position: absolute;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+li:hover{
+background-color: #3bbcbb;
+}
+
+.Nivel2 {
+    position: relative;
+}
+
+.Nivel2 {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.Nivel2 > li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #fff ;
+    text-align: center;
+    background-color: #299fbd;
+}
+
+.Nivel2 > li:hover {
+    background-color: #3bbcbb;
+}
+
+.Nivel1:hover > .Nivel2 {
+    display: block;
+}
+
+.Nivel3 {
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top: 40%;
+    display: none;
+    background-color: #24252a;
+}
+
+.Nivel3 > li {
+    padding: 1.5vw;
+    border-bottom: solid 1px #fff;
+}
+
+.front:hover > .Nivel3 {
+    display: block;
+}
+
+@media (max-width:900px) {
+    .logo {
+        display: none;
+    }
+}
+footer {
+   padding: 10px;
+   text-align: center;
+   background-color: #005884; 
+   margin-top: auto;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>EJERCICIO 10 | FORMULARIO HTML 4</title>
+        <link rel="stylesheet" href="10_formulario_HTML4.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>EJERCICIO 10 | FORMULARIO HTML 4</h1>
+        </header>
+
+        <section class="section">
+            <form action="http://10.0.56.5/~juanjo/00_primero/recibir_datos.php" method="GET">
+
+                <h3>Registro</h3>
+
+                <label for="Nombre">Introduzca su Nombre:</label>
+                <input class="controls" type="text" id="Nombre" name="nombre">
+                
+                <label for="PrimerApellido">Introduzca su Apellido:</label>
+                <input class="controls" type="text" id="PrimerApellido" name="Apellido">
+
+                <label for="Edad">Edad:</label>
+                <input class="controls" type="text" id="Edad" name="Edad" size="3" maxlength="2">
+
+                <label for="Idioma">¿En que Idioma prefiere que nos comuniquemos?:</label>
+                <select class="controls" name="Idioma">
+                    <option>English</option>
+                    <option>Euskera</option>
+                    <option selected="">Castellano</option>
+                </select>
+
+                <label for="Correo">Introduzca su Correo:</label>
+                <input class="controls" type="email" id="Correo" name="correo">
+                
+                <label for="Correo">Introduzca su Contraseña:</label>
+                <input class="controls" type="Password" id="Password" name="Password">
+
+                <input type="checkbox" name="Confirmacion" id="Confirmacion" value="Confirmacion">
+                <label class="Confirmacion">Estoy de acuerdo con <a href="#">Terminos y Condiciones</label></p>
+                
+                <input class="botons" type="submit" value="Registrar">
+                <p><a href="#">¿Ya tengo Cuenta?</a></p>
+
+                <input type="hidden" name="IdUsuario" value="001">
+                
+            </form>
+
+        </section>
+
+        <footer>
+            <h2>@dannyelfloyd</h2>
+        </footer>
+
+    </body>
+
+</html>

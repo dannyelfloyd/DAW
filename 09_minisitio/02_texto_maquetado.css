@@ -1,0 +1,17 @@
+body {
+  background-color: #000000; /* Color de fondo */
+  color: #FFFFFF; /* Color del texto */
+  border: thick solid green;
+} h1 {
+  border: 2px solid white;
+  margin: 0 1cm 0 2cm;
+  text-align: center;
+  text-decoration: underline green;
+}p {
+  border: thin dashed white;
+  padding: 20pt 30pt;
+  text-align: center;
+  background-image: linear-gradient(green, black);
+}p {
+  text-indent: 20pt;
+}

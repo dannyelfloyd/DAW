@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    height: 100vh;
+    background-image: url(09_minisitio/background.jpg);
+    background-size: cover;
+    color: #fff;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px;
+    background-color: #005884;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #005884; 
+    margin-top: auto;
+}
+.container {
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    transform: translate(-50%, -40%);
+    left: 50%;
+    top: 20%;
+    background: url(14_sprites/mariorunning.png);
+    animation: kick 1.8s steps(6) infinite;
+}
+@keyframes kick {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position:-3600px 0;
+    }
+  }

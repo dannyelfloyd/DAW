@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    height: 100vh;
+    background-image: url(09_minisitio/background.jpg);
+    background-size: cover;
+    color: #fff;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px;
+    background-color: #005884;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #005884; 
+    margin-top: auto;
+}
+.sprite {
+    width:127px;
+    height:127px;
+    display: inline-block;
+    background-image: url(14_sprites/spritesheet.png);
+    background-repeat: no-repeat;
+}
+.sprite-mario1 {
+    width: 578px;
+    height: 677px;
+    background-position: -125px -5px;
+}
+
+.sprite-mario2 {
+    width: 1000px;
+    height: 1282px;
+    background-position: -713px -5px;
+}
+
+.sprite-mario3 {
+    width: 1475px;
+    height: 1714px;
+    background-position: -1723px -5px;
+}
+
+.sprite-mario4 {
+    width: 1000px;
+    height: 1282px;
+    background-position: -3208px -5px;
+}
+
+.sprite-mario5 {
+    width: 1475px;
+    height: 1714px;
+    background-position: -5px -1729px;
+}
+
+.sprite-mario6 {
+    width: 578px;
+    height: 677px;
+    background-position: -3208px -1297px;
+}		

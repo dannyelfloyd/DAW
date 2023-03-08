@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>EJERCICIO 12 | FORMULARIO MAQUETADO</title>
+        <link rel="stylesheet" href="12_formulario_maquetado.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>EJERCICIO 12 | FORMULARIO MAQUETADO</h1>
+        </header>
+
+        <section class="section">
+            <form action="http://10.0.56.5/~juanjo/00_primero/recibir_datos.php" method="GET">
+
+                <h3>Perfil del Usuario</h3>
+
+                <input class="controls" type="text" id="Nombre" name="nombre" required="" placeholder="Introduzca su Nombre:">
+                
+                <input class="controls" type="text" id="PrimerApellido" name="Apellido" required="" placeholder="Introduzca su Apellido:">
+
+                <label for="BirthDate">Fecha de Nacimiento:</label> 
+                <input class="controls" type="date" id="BirthDate" name="BirthDate">
+
+                <div>
+                    <label>Eliga un genero</label><br> 
+                    <label class="radio" for="radioButton">
+                        <input type="radio" value="Masculino" name="genero">
+                        Masculino
+                        <span></span>
+                    </label>
+                    <label class="radio" for="radioButton">
+                        <input type="radio" value="Femenino" name="genero">
+                        Femenino
+                        <span></span>
+                    </label>
+                    <label class="radio" for="radioButton">
+                        <input type="radio" value="Otro" name="genero">
+                        Otro
+                        <span></span>
+                    </label>
+                </div>
+
+                <datalist id="País">
+                    <option value="España"></option>
+                    <option value="Euskadi"></option>
+                    <option value="Francia"></option>
+                </datalist>
+                <input class="controls" type="text" name="País" list="País" placeholder="Lugar de Nacimiento">
+
+                <input class="controls" type="tel" name="Telefono" placeholder="Número Telefono:">
+
+                <input type="checkbox" name="Confirmacion" id="Confirmacion" value="Confirmacion" required="">
+                <label class="Confirmacion">Estoy de acuerdo con <a href="#">Terminos y Condiciones</label></p>
+                
+                <input class="botons" type="submit" value="Registrar">
+                <p><a href="#">¿Ya tengo Cuenta?</a></p>
+
+                <input type="hidden" name="IdUsuario" value="001">
+                
+            </form>
+
+        </section>
+
+
+        <footer>
+            <h2>@dannyelfloyd</h2>
+        </footer>
+
+    </body>
+
+</html>
