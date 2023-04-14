@@ -1,0 +1,14 @@
+/*
+Menú horizontal
+*/
+#navegar ul{
+	list-style-type:none;
+}
+
+#navegar li{
+	display:inline;
+}
+
+#complemento{
+	display:none;
+}

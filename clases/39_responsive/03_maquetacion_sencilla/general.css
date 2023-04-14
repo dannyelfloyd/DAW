@@ -1,0 +1,25 @@
+/*
+REGLAS PARA APLICAR SIEMPRE
+*/
+
+body{
+	background-color:yellow;
+}
+#cabecera{
+	border: 1px  dotted black;
+}
+
+#pie{
+	border: 1px  dotted black;
+}
+/*
+COLORES DEL MENÚ
+*/
+#navegar a:hover{
+	background-color:navy;
+	color:white;
+}
+#navegar a{
+	text-decoration:none;
+	background-color:cyan;
+}

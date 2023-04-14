@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Listas en HTML</title>
+
+</head>
+<body>
+<h1>Listas en HTML</h1>
+<p>En HTML tenemos tres tipos de listas</p>
+<h2>Listas no ordenadas</h2>
+<p>Las realizaremos con la etiqueta <code>&lt;ul&gt;</code>: <em>unordered list</em></p>
+<p>Dentro de cada lista tendremos al menos un elemento &lt;li&gt; <em>list item</em></p>
+<ul type="disc" ><!-- "square" "circle" -->
+<li>Primer elemento</li>
+<li>Segundo</li>
+<li>Tercero</li>
+</ul>
+<p>No 
+
+
+
+es recomendable 
+
+
+
+pero podemos usar           el atributo type</p>
+<code>
+<pre>
+&lt;ul type=&quot;disc&quot; &gt;&lt;!-- &quot;square&quot; &quot;circle&quot; --&gt;
+	&lt;li&gt;Primer elemento&lt;/li&gt;
+	&lt;li&gt;Segundo&lt;/li&gt;
+	&lt;li&gt;Tercero&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</code>
+<h2>Listas ordenadas</h2>
+<p>Las realizaremos con la etiqueta <code>&lt;ol&gt;</code>: <em>ordered list</em></p>
+<p>Dentro de cada lista tendremos al menos un elemento &lt;li&gt; <em>list item</em></p>
+<!--
+Atributos de ol
+reversed  (Lista al revés)
+type puede ser "1" "A" "a" "I" "i"
+start
+
+Atributo de li
+value="un numero"
+-->
+<ol type="1" start="5">
+	<li>El uno</li>
+	<li value="12">El dos</li>
+	<li>El tres</li>
+</ol>
+<h2>Listas anidadas</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+<p>Observa que la lista más interna esta totalmente contenida en u li</p>
+<pre>
+<code>
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea
+    &lt;ul&gt;
+      &lt;li&gt;Black tea&lt;/li&gt;
+      &lt;li&gt;Green tea&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+
+</code>
+</pre>
+<h2>Listas de definiciones</h2>
+<p>Las usaremos para definir términos</p>
+<p>dl &rarr; definition list</p>
+<p>dt &rarr; definition term</p>
+<p>dd &rarr; definition list definition</p>
+<dl>
+	<dt>HTML</dt>
+	<dd>Hyper text markup language.Es el lenguaje de estructura para los documentos web</dd>
+	<dt>CSS</dt>
+	<dd>Cascade Style Sheet. Es el lenguaje que da estilo a los documentos web documentos web documentos web documentos web documentos web documentos web documentos web documentos web documentos web documentos web documentos web documentos web documentos web documentos web documentos web </dd>
+	<dt>Javascript</dt>
+	<dd>Es el lenguaje de programación que da interactividad a los documentos web</dd>
+</dl>
+</body>
+</html>

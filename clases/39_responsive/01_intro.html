@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Responsive Design</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js"></script>
+	 <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" >
+	 <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" >
+<!--
+Para escribir CSS <pre class="brush: css; html-script: true">
+Para escribir HTML <pre class="brush: html">
+-->
+	<style type="text/css">
+	body {background-color:#b6e9e8;}
+	
+	@media screen and (max-width: 700px){
+		body {background-color:#aedfae;}
+	}
+	
+	@media screen and (max-width: 400px){
+		body {background-color:yellow;}
+	}
+	</style>
+	</head>
+	<body>
+	<p>Hoy en día es habitual navegar en dispositivos de distintos tamaños. La forma de resolver el problema es el <em>Responsive Design</em>. Funciona de la siguiente manera: el servidor envía CSS para cada uno de los dispositivos posibles y es el navegador el que filtra para saber qué reglas debe usar con cada dispositivo concreto.</p>
+	<p>La forma de separar las reglas CSS unas de otras para usar con distintos dispositivos es la media query</p>
+	
+	<p>Se pueden meter dentro de una etiqueta link de los de la cabecera que usamos normalmente para el CSS pero lo normal es poner todas las reglas en el mismo fichero</p>
+	<pre class="brush: css">
+	/*
+	Esta zona no va protegida por ninguna media query y las reglas se aplican a todas las dimensiones
+	*/
+	body {background-color:#b6e9e8;}
+	
+	@media screen and (max-width: 700px){
+	/*
+	Las reglas que pongamos aquí sólo se usan si el dispositivo tiene menos de 700px
+	*/
+		body {background-color:#aedfae;}
+	}
+	
+	@media screen and (max-width: 400px){
+	/*
+	Las reglas que pongamos aquí sólo se usan si el dispositivo tiene menos de 400px
+	*/
+		body {background-color:yellow;}
+	}
+	
+	</pre>
+	<p>A los valores 400px y 700px se les llama puntos de ruptura o <em>breakpoints</em>. Para ver cuáles usamos es razonable buscar en google qué es lo que se está usando en cada momento.</p>
+	<p>Normalmente el término no se traduce, pero si lo haces no le llames diseño adaptable. En inglés se distingue entre <em>Responsive design</em>, en el que se manda TODO EL CSS y es el navegador el que filtra y el <em>Adaptative Design </em> en el que el servidor manda un CSS u otro dependiendo del dispositivo que haga la petición.</p>
+	<p>No se puede llamar responsive design o responsive layout a esos diseños que hemos visto que se adaptan a distintas resoluciones (columna izquierda de ancho fijo y el resto lo ocupa la otra columna). A eso se le llama diseño fluido o líquido y el CSS es siempre el mismo</p>
+	<p>Las media queries puedes ser bastante complejas. Aquí tienes algunas tomadas de </p>
+<pre class="brush: css">	
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+</pre>	
+	<p>Para que te hagas una idea de cómo se va complicando esto, ahí la lista completa de queries posibles</p>
+	<ul>
+<li>width</li>
+<li>min-width</li>
+<li>max-width</li>
+<li>device-width</li>
+<li>min-device-width</li>
+<li>max-device-width</li>
+<li>height</li>
+<li>min-height</li>
+<li>max-height</li>
+<li>device-height</li>
+<li>min-device-height</li>
+<li>max-device-height</li>
+<li>aspect-ratio</li>
+<li>min-aspect-ratio</li>
+<li>max-aspect-ratio</li>
+<li>device-aspectratio</li>
+<li>min-device-aspectratio</li>
+<li>max-device-aspectratio</li>
+<li>color</li>
+<li>min-color</li>
+<li>max-color</li>
+<li>color-index</li>
+<li>min-color-index</li>
+<li>max-color-index</li>
+<li>monochrome</li>
+<li>min-monochrome</li>
+<li>max-monochrome</li>
+<li>resolution</li>
+<li>min-resolution</li>
+<li>max-resolution</li>
+<li>orientation</li>
+<li>scan</li>
+<li>grid</li>
+	</ul>
+	<script type="text/javascript">
+		 SyntaxHighlighter.all()
+	</script>
+	</body>
+</html>

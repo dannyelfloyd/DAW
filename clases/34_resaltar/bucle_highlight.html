@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pruebas con highlight</title>
+<!--
+Primero cargamos un estilo. 
+Puede ser por defecto o cualquier otro
+-->
+<link rel="stylesheet" href="highlight/styles/arduino-light.min.css">
+<!--
+Después cargamos la librería
+-->
+<script src="highlight/highlight.min.js"></script>
+<!--
+Por último, arrancamos la herramienta.
+Ella busca <code>, posiblemente dentro de <pre> y supone qué lenguaje es.
+
+Si preferimos hacerlo nosotros, podemos usar clases como class="language-html" o class="language-java"
+-->
+<script>hljs.highlightAll();</script>
+</head>
+<body>
+<h1>Pruebas con highlight</h1>
+<h2>Bucle en java</h2>
+<!--
+<pre>
+<code>
+for(int i=0;i&lt;100;i++){
+	system.out.println(i);
+}
+</code>
+</pre>
+-->
+<pre class="language-java">
+<code>
+for(int i=0;i&lt;100;i++){
+	system.out.println(i);
+}
+</code>
+</pre>
+<h2>Tabla en HTML</h2>
+<p>Si pones esto:</p>
+<pre  class="language-html">
+<code>
+ &lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Company&lt;/th&gt;
+    &lt;th&gt;Contact&lt;/th&gt;
+    &lt;th&gt;Country&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+    &lt;td&gt;Maria Anders&lt;/td&gt;
+    &lt;td&gt;Germany&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+    &lt;td&gt;Francisco Chang&lt;/td&gt;
+    &lt;td&gt;Mexico&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt; 
+</code>
+</pre>
+<p>Sale esto:</p>
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table> 
+<h2>Uso de highlight.js</h2>
+<p>Lo primero cargamos el estilo</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;highlight/styles/arduino-light.min.css&quot;&gt;</code></pre>
+<p>Si no te gusta el tema arduino-light.min.css coge otro de la misma carpeta, que hay muchos</p>
+<p>Ahora cargamos el javascript</p>
+<pre><code class="language-html">&lt;script src=&quot;highlight/highlight.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Para terminar, arrancamos la herramienta</p>
+<pre><code class="language-html">&lt;script&gt;hljs.highlightAll();&lt;/script&gt;</code></pre>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/*
+Lo primero es decidir qué etiqueta usar.
+Por ejemplo, span.
+
+Clases que necesitamos:
+red..............Para todos los iconos
+activo/pausado...Para elegir color o b/n
+red-ig-activo
+red-ig-pausado
+red-tw-activo
+red-tw-pausado
+red-fb-activo
+red-fb-pausado
+red-wk-activo
+red-wk-pausado
+red-pi-activo
+red-pi-pausado
+red-yt-activo
+red-yt-pausado
+
+127px en la horizontal
+127px en la vertical
+*/
+span.red{
+		width:127px;
+		height:127px;
+		display:inline-block;
+		background-color:white;
+		border:1px solid red;
+		background-image:url("redes.png");
+		background-repeat:no-repeat;
+		}
+.red-ig-pausado{
+	background-position:0 0;
+}		
+.red-tw-pausado{
+	background-position:-127px 0;
+}		

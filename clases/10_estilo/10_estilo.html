@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<!--
+Podemos dar estilo a un documento web de arias maneras,que se indican a continuación de mejor a peor
+1.-Fichero de estilo enlazado con un link
+2.-Poniendo una etiqueta style en la cabecera
+3.-Usando un atributo style. No lleva selector y se pueden meter distintas propiedades separadas por ;
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>La literatura descarnada de la francesa Annie Ernaux se hace con el Nobel</title>
+<!-- Lo que va dentro  de esta sección no es HTML -->
+<style type="text/css">
+/*
+Esto es un comentario
+
+Una regla de estilo se construye con un selector y una propiedad. El selector más simple es una etiqueta
+*/
+h1{ color:navy; }
+h2{
+	color:red;
+}
+p{ 
+	color:white;
+	background-color:navy;
+}
+/*
+Tal y como está, ignora 
+	color:white;
+Si no sabes lo que haces hay un truco para torpes que es poner
+	color:white !important;
+Le eleva la prioridad a esta regla CSS por encima de la que es del mismo nivel y va detrás e incluso por encima de la del atributo style que es mucho más concreta	
+*/
+</style>
+<link rel="stylesheet" type="text/css" href="10_estilo.css">
+</head>
+<body>
+<h1>La literatura descarnada de la francesa Annie Ernaux se hace con el Nobel </h1>
+<h2>Sus libros se basan en la autoficción y en pocas páginas muestran la aspereza de un mundo en el que la autora se siente ajena</h2>
+<p>
+Una de las obras de madurez de Annie Ernaux (Lillebonne, 1940) se titula 'Écrire la vie', Escribir la vida. Eso es exactamente lo que esta autora francesa ha hecho siempre: contar la vida, empezando por la suya y la de su familia. Lo ha hecho de una forma descarnada, con un estilo despojado de todo lo que no sea imprescindible y un distanciamiento que tiene el efecto de golpear al lector y dejarlo sin aliento. Es la literatura que la ha conducido al Olimpo de la Academia sueca, cuyo secretario permanente acaba de anunciar que ha sido la elegida para el Nobel de este año.
+</p>
+<p>
+Ernaux no fue una escritora precoz puesto que no publicó su primera obra hasta bien entrada en la treintena. Para entonces había acumulado experiencias en principio no demasiado heroicas que comenzó a poner por escrito, convencida de que la intimidad tiene una dimensión superior y puede leerse desde una perspectiva más amplia. De esa forma, la vida familiar en la tienda-bar de su familia, un aborto en sus años jóvenes, su matrimonio, la enfermedad neurológica de su madre, su propio paso por un duro tratamiento médico, se han convertido en materia prima de sus libros. 
+</p>
+<p style="color:olive;background-color:black;">Hola</p>
+</body>
+</html>

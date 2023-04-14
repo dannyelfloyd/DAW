@@ -1,0 +1,12 @@
+Consigue unos cuantos iconos que tengan relación. Por ejemplo, tipos de archivo.
+
+Busga un generador online de sprites. 
+
+Te debe hacer el CSS y el propio sprite.
+
+Por ejemplo https://www.codeandweb.com/free-sprite-sheet-packer
+
+Usalos en una página
+-------------------------------------------------------
+Puedes ver cómo usarlos con animaciones en 
+https://medium.com/jspoint/creating-css-animations-using-sprite-sheet-47e2b7a3793c

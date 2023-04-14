@@ -1,0 +1,89 @@
+/*
+Hay pseudoclases para enlaces que usamos en CSS2
+	a:link
+	a:active
+	a:focus
+	a:hover
+	a:visited
+*/
+/*
+a {
+	font-family:monospace;
+}
+
+a:link {
+	color:red;
+	font-size:150%;
+}
+
+a:visited {
+	color:green;
+}
+
+Siguiendo el tabulador. Por defecto pone un  borde con puntitos
+
+a:focus {
+	text-decoration:line-through !important; 
+}
+
+a:active {
+	color:cyan;
+}
+*/
+
+/*
+Los que tengan atributo href (con el valor que sea o sin valor)
+*/
+a[href]{
+	color:red;
+}
+/*
+Enlaces que sean exactamente una cadena
+*/
+a[href="elorrieta"]{
+	color:yellow;
+}
+/*
+Enlaces que contengan una cadena
+*/
+a[href*="elorrieta"]{
+	font-size:200%;
+}
+a[href*="google"]{
+	font-size:150%;
+}
+
+/*
+Enlaces externos. Comienza por http
+*/
+
+a[href^="http"]{
+	font-style:italic;
+}
+
+a[href$=".pdf"]{
+	text-decoration:overline !important;	
+}
+
+a[href$=".pdf"]::before{
+	/*content:"♥";*/
+	content:"\1F499";
+	/*
+	Lo que pongamos aquí no da estilo al enlace sino al content
+	*/
+	color:navy;
+}
+/*
+a[href$=".png"]::before{
+	content:url("icon/tipos-de-archivo/svg/png.svg");
+	width:40px;
+	height:40px;
+	display:inline-block;
+}
+*/
+a[href$=".png"]::before{
+	content:url("iconos/exhibition-icon-set/exhibition-icon-set/SVG/2.svg");
+	width:40px;
+	height:40px;
+	display:inline-block;
+}

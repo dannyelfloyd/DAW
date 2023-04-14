@@ -1,0 +1,3 @@
+Busca un sprite de tipos de archivo (casi mejor en svg) y hazte una regla para ficheros de word, excel, imágenes de varios tipos, pdf....
+
+Haz una lista de enlaces/recursos y observa como les pone los iconos automáticamente sei defines bien las reglas

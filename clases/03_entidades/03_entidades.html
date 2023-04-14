@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Entidades en HTML</title>
+
+</head>
+<body>
+<h1>Entidades en HTML</h1>
+<p>Una entidad HTML es una expresión que comienza por & y acaba por ;</p>
+<p>Entre estos dos símbolos pueden ir caracteres ASCII (entidades con nombre)o bien números precedidos de un #.</p>
+<p>Por este motivo se transmiten bien entre distintos equipos a través de la red porque usan solo ASCII</p>
+<p>El navegador, interpreta la entidad como un símbolo</p>
+<p>Por ejemplo, la ñ es &ntilde; &Ntilde; </p>
+<p>El copiright es &copy;</p>
+<p>El menor es &lt;</p>
+<p>Una claqueta de cine es  	
+&#127916;</p>
+<p>Hay varios motivos para usar entidades HTML</p>
+<h2>Entidades para resolver problemas de tablas de códigos</h2>
+<p>Vocales acentuadas en utf8: á é í ó ú</p>
+<p>Vocales acentuadas en ANSI: � � � � �</p>
+<p>Vocales con entidades &aacute; &eacute; &iacute; &oacute; &uacute; </p>
+<p>Vocales acentuadas en mayúscula &Aacute; &Eacute; &Iacute; &Oacute; &Uacute;</p>
+<p>Nos faltan: &ntilde; &Ntilde; &uuml; &Uuml;</p>
+<p>Este motivo hoy en día no tiene mucho sentido</p>
+<h2>Entidades como caracteres especiales que queremos usar como literales</h2>
+<p>El caracte & quiere decir inicio de entidad. Puedo usar una entidad para que lo entienda literalmente (como un &)</p>
+<p>Puedo usar la entidad &amp;</p>
+<p>Para escribir un párrafo se pone &lt;p&gt;</p>
+<p>La entidad &amp;oacute; es &oacute;</p>
+<h2>Nos sirven para caracteres que posiblemente no se saquen con comodidad del teclado</h2>
+<p>La entidad &amp;copy; es &copy;</p>
+<p>&amp;euro; &euro;</p>
+<p>Flecha a la derecha &rarr;</p>
+<p>Flecha a la izquierda &larr;</p>
+<!--
+Hay una entidad muy útil que es el espacio "duro". Un espacio que no se puede romper
+-->
+<p>Distancias con sus unidades. Posiblemente al saltar de línea se separen: queda a fin de línea un 20 y al principio de la siguiente Km. Cambia el ancho de la ventana para comprobarlo</p>
+<p>20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km, 20 Km</p>
+<p>Si cambiamos el espacio entre el número y la unidad por &amp;nbsp;, evitamos ese problema</p>
+<p>20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km, 20&nbsp;Km</p>
+<h2>Distintas formas de escribir una entidad</h2>
+<p>Podemos escribir la A con acento de tres maneras &Aacute; &#193; &#xC1  &amp;Aacute; &amp;#193; &amp;#xC1 </p>
+
+<h2>Lo nuevo del unicode &amp;#9885; &#9885;</h2>
+
+<p>Tenemos hasta un panda &#128060; &amp;#128060;</p>
+
+
+</body>
+</html>

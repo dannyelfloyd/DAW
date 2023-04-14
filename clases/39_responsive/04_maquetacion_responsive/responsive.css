@@ -1,0 +1,112 @@
+/* Reglas que se aplican siempre */
+body{
+	background-color:yellow;
+}
+#cabecera{
+	border: 1px  dotted black;
+}
+
+#pie{
+	border: 1px  dotted black;
+}
+/*
+COLORES DEL MENÚ
+*/
+#navegar a:hover{
+	background-color:navy;
+	color:white;
+}
+#navegar a{
+	text-decoration:none;
+	background-color:cyan;
+}
+
+/* Reglas hasta 2000px (todos los monitores )*/
+@media screen and (max-width: 2000px){
+
+	#navegar a{
+		display:block;
+	}
+
+	#navegar ul{
+		list-style-type:none;
+		width:10em;
+	}
+
+
+	#navegar li{
+		padding:.1em;
+	}
+
+	#navegar li a{
+		padding:.25em;
+	}
+
+	#navegar{
+		width:250px;
+		border: 1px solid black;
+		float:left;
+	}
+	#complemento{
+		width:250px;
+		border: 1px solid black;
+		float:right;
+	}
+
+	#contenido{
+		margin-left:255px;
+		margin-right:255px;
+	}
+
+	#pie{
+		clear:both;
+	}	
+}
+
+@media screen and (max-width: 800px){
+	#navegar ul,#navegar ul li {display:block; margin:0;padding:0;width:100%}
+	#navegar ul  li  a{display:inline; margin:0;padding:0;}
+	#navegar{margin:0;padding:0;float:none;width:100%}
+	#contenido{margin:0;padding:0;}
+	/*
+	Menú horizontal
+	*/
+	#navegar ul{
+		list-style-type:none;
+	}
+
+	#navegar ul li{
+		display:inline;
+	}
+
+	#complemento{
+		display:none;
+	}
+}
+
+@media screen and (max-width: 450px){
+	#navegar ul,#navegar ul li {display:block; margin:0;padding:0;width:100%}
+	#navegar ul  li  a{display:inline; margin:0;padding:0;}
+	#navegar{margin:0;padding:0;float:none;width:100%}
+	#contenido{margin:0;padding:0;}
+	
+	#navegar ul li a{
+		display:block;
+	}
+	#navegar ul{
+		list-style-type:none;
+	}
+
+
+	#navegar ul li{
+		padding:.1em;
+	}
+
+	#navegar li a{
+		padding:.25em;
+	}
+
+	#complemento{
+		display:none;
+	}
+}

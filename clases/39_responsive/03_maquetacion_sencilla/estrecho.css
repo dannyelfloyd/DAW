@@ -1,0 +1,19 @@
+#navegar a{
+	display:block;
+}
+#navegar ul{
+	list-style-type:none;
+}
+
+
+#navegar li{
+	padding:.1em;
+}
+
+#navegar li a{
+	padding:.25em;
+}
+
+#complemento{
+	display:none;
+}

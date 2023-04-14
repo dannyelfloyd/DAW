@@ -1,0 +1,35 @@
+/*
+Lo que pongamos aquí vale para todos
+
+Se suele meter:
+->Tipos de letra
+->Colores de texto y de fondo
+En general todo lo que no suele cambiar con el tamaño
+*/
+
+body{
+	background-color:yellow;
+	font-family:Georgia,sans-seriff;
+}
+
+#izquierda{
+	width:300px;
+	float:left;
+	border:1px solid black;
+}
+
+#principal{
+	border:1px solid black;
+	margin-left:310px;
+}
+
+@media screen and (max-width: 700px){
+	#izquierda{
+		width:100%;
+		border:1px solid black;
+		float:none;		
+	}
+	#principal{
+		margin-left:0;
+	}
+}

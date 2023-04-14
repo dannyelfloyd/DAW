@@ -1,0 +1,38 @@
+
+#navegar a{
+	display:block;
+}
+
+#navegar ul{
+	list-style-type:none;
+	width:10em;
+}
+
+
+#navegar li{
+	padding:.1em;
+}
+
+#navegar li a{
+	padding:.25em;
+}
+
+#navegar{
+	width:250px;
+	border: 1px solid black;
+	float:left;
+}
+#complemento{
+	width:250px;
+	border: 1px solid black;
+	float:right;
+}
+
+#contenido{
+	margin-left:255px;
+	margin-right:255px;
+}
+
+#pie{
+	clear:both;
+}

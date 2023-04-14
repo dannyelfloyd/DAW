@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Escritura de código en HTML</title>
+
+</head>
+<body>
+<!--
+En el siguiente título puedes ver que el navegador compacta los espacios, o, como se suele decir los whitespaces
+-->
+<h1>Escritura 
+
+
+
+de                         código 
+
+
+
+en 
+
+HTML</h1>
+<p>Para mostrar código en un docmento HTML tenemos dos problemas: la gestión del espacio, que resolveremos con &lt;pre&gt; y los caracteres especiales, que resolveremos con entidades</p>
+<p>
+<pre>
+<code>
+function handleGuess(chosenLetter) {
+  guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
+  document.getElementById(chosenLetter).setAttribute('disabled', true);
+
+  if (answer.indexOf(chosenLetter) &lt;= 0) {
+    guessedWord();
+    checkIfGameWon();
+  } else if (answer.indexOf(chosenLetter) === -1) {
+    mistakes++;
+    updateMistakes();
+    checkIfGameLost();
+    updateHangmanPicture();
+  }
+}
+
+</code>
+</pre>
+<p>Veamos una plantilla de documento HTML</p>
+<pre>
+<code>
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+&quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+&lt;title&gt;HAS OLVIDADO EL TITULO&lt;/title&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Hola Mundo&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+</p>
+</body>
+</html>
